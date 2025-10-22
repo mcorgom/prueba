@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Mi primer formulario</title>
+        <link rel="icon" href="icons8-favicon-64.png" type="image/x-icon" />
+    </head>
+    <body>
+        <form action="/submit" method="post">
+            <laberl for="nombre">Nombre:</laberl>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre"><br><br>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" ide="email" name="email" placeholder="Ingresa tu correo"><br><br>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí"></textarea><br><br>
+
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+            <option value="es">España</option>
+            <option value="mx">México</option>
+            <option value="ar">Argentina</option>
+            </select><br><br>
+
+            <label>Intereses:</label><br>
+            <label><input type="checkbox" name="intereses" value="musica"> Música</label><br>
+            <label><input type="checkbox" name="intereses" value="deportes"> Deportes</label><br>
+            <label><input type="checkbox" name="intereses" value="lectura"> Lectura</label><br><br>
+
+            <label>Género:</label><br>
+            <label><input type="radio" name="genero" value="masculino"> Masculino</label><br>
+            <label><input type="radio" name="genero" value="femenino"> Femenino</label><br>
+            <label><input type="radio" name="genero" value="otro"> Otro</label><br><br>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </body>
